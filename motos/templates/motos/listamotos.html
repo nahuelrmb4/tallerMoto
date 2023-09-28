@@ -1,0 +1,18 @@
+<h2>{{titulo}}</h2>
+<ul>
+    {%  for M in motos %}
+    <li>
+        <p>
+            Producto ID:{{M.id}}<br>
+            nombre: {{M.nombre}}<br>
+            marca: {{M.marca}}<br>
+            modelo:{{M.modelo}}<br>
+            cilindrada:{{M.cilindrada}}<br>
+            fecha_time:{{M.fecha_time}}<br>
+            motor_id:{{M.motor_id}}<br>
+        </p>
+    </li>
+    <hr>
+    <br>
+    {%endfor%}
+</ul>
