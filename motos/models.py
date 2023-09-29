@@ -12,3 +12,12 @@ class M(models.Model):
 def __str__(self):
     return self.nombre
 
+class Mecanico(models.Model):
+    nombre=models.CharField(max_length=50)
+
+class Reparacion(models.Model):
+    descripccion=models.CharField(max_length=50)
+    mecanico=models.ForeignKey(Mecanico, on_delete=models.CASCADE)
+    
+
+
